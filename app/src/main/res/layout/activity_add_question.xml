@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@drawable/bg_img"
+    tools:context=".AddQuestionActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Question:"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/edt_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:textColor="#fff"
+        android:ems="10"
+        android:hint="Enter the question" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        android:gravity="top"
+
+        <TextView
+            android:id="@+id/optn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="40dp"
+            android:text="TextView"
+            tools:text="Option1:" />
+        <EditText
+            android:id="@+id/edt_optn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:ems="10"
+            android:hint="Enter first option " />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        android:orientation="vertical"
+        android:gravity="top"
+
+        <TextView
+            android:id="@+id/optn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="40dp"
+            android:text="TextView"
+            tools:text="Option2:" />
+        <EditText
+            android:id="@+id/edt_optn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:ems="10"
+            android:hint="Enter second option " />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Choose right option"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="40dp"
+            android:paddingTop="20dp"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Option1" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Option2" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
+
